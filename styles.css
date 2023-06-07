@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display SC", serif;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background: #ffc0cb;
+}
+
+.content {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  margin: 5% auto;
+  width: 1000px;
+  height: 500px;
+  background-color: #d4cfc9;
+  animation: anime 1s ease;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #1d2f61, #a1c7ee);
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.headeContent h1 {
+  font-size: 1.5rem;
+}
+
+.buttonContainer button {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  background: #d4cfc9;
+  width: 40px;
+  height: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.buttonContainer button:hover {
+  background: #999999;
+}
+
+.form {
+  padding: 3rem 5rem;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputContainer label {
+  width: 250px;
+}
+
+.inputContainer input {
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  border-right: 3px solid #dad9d5;
+  border-bottom: 3px solid #dad9d5;
+  width: 100%;
+  outline: none;
+}
+
+.inputContainer input,
+.inputContainer label {
+  margin-bottom: 1rem;
+}
+
+.buttonContainerForm {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttonContainerForm button {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  width: 10rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1010px) {
+  body {
+    padding: 0 4rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) and (min-width: 320px) {
+  .form {
+    padding: 1rem;
+  }
+
+  .buttonContainerForm {
+    justify-content: space-around;
+  }
+}
